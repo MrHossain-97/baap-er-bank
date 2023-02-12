@@ -15,12 +15,14 @@ document.getElementById('btn-deposit').addEventListener('click',function () {
     // print total deposit amount
     totalDeposit.innerText = currentDepositTotal;
 
+    // step 4:
     // set balance current total
     const balance = document.getElementById('balance');
     const prevBalance = parseFloat(balance.innerText);
     // set new balance
     const currentBalance = prevBalance + newDepositAmount;
+    // print new balance
     balance.innerText = currentBalance;
 
-    document.getElementById('deposit-amount').value='';
+    depositField.value='';
 })
